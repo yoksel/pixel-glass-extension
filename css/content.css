@@ -1,0 +1,23 @@
+.maket-glass {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  min-height: 4000px;
+  pointer-events: none;
+  background-position: center top;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+.page--state-on .maket-glass {
+  display: block;
+}
+
+.page--blendMode-difference .maket-glass {
+  mix-blend-mode: difference;
+  outline: none;
+}

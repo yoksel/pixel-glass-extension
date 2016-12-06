@@ -85,6 +85,11 @@ function setBgImgs( maketItem ) {
     'tablet': '768px',
     'desktop': '1200px',
   };
+
+  if ( screens && screens[ maketItem ]) {
+    screenSizes = screens[ maketItem ];
+  }
+
   var imgUrlBegin = maketItem + "-" + pageId;
   var bodyClass = '.' + getBodyClass('maket', maketItem);
   var styleStrings = [];

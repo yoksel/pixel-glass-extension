@@ -136,6 +136,7 @@ function createInputsRange(params) {
     for (var attr in attrs) {
         input.setAttribute(attr, attrs[ attr ]);
     }
+    input.setAttribute('value', currents.opacity);
 
     var label = document.createElement('label');
     label.setAttribute('for', itemName);
